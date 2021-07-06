@@ -5661,7 +5661,7 @@ end
 --local Char = workspace.non
 --[[
 local Hats = {
- Hat1 = Char:FindFirstChild("MeshPartAccessory"),
+ Hat1 = Char:FindFirstChild("Dark Matter Sword"),
 }
 
 if Char:FindFirstChild("ShadowBladeMasterAccessory") then
@@ -5669,19 +5669,19 @@ if Char:FindFirstChild("ShadowBladeMasterAccessory") then
 end
 --]]
 if _G.permadeath == true then
-if char:FindFirstChild("MeshPartAccessory") then
+if char:FindFirstChild("Dark Matter Sword") then
     local athp = Instance.new("Attachment",char.Model.Part)
     local atho = Instance.new("Attachment",char.Model.Part)
-    if char["MeshPartAccessory"] then
-        char["MeshPartAccessory"].Handle.AccessoryWeld:Remove()
-        char["MeshPartAccessory"].Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
-        char["MeshPartAccessory"].Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+    if char["Dark Matter Sword"] then
+        char["Dark Matter Sword"].Handle.AccessoryWeld:Remove()
+        char["Dark Matter Sword"].Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+        char["Dark Matter Sword"].Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
     end
     athp.Position = Vector3.new(-2.65, 0.05, 0)
     atho.Orientation = Vector3.new(-0, -0, -48)
 end
 else
-attach(char:FindFirstChild("MeshPartAccessory").Handle,char.Model.Part,Vector3.new(-0.1, -0.3, 0),Vector3.new(0, 90, 65))
+attach(char:FindFirstChild("Dark Matter Sword").Handle,char.Model.Part,Vector3.new(-0.1, -0.3, 0),Vector3.new(0, 90, 65))
 end
 
 Player=game:GetService("Players").LocalPlayer
